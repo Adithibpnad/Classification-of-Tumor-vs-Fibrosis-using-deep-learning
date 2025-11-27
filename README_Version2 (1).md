@@ -81,28 +81,10 @@ The project implements a hybrid neural network that combines convolutional and t
 - **Classification Metrics:**
     - _Fibrosis_: Precision = 0.98, Recall = 0.91, F1-score = 0.95
     - _Tumor_: Precision = 0.88, Recall = 0.98, F1-score = 0.93
-- **Confusion Matrix:**
+- **Confusion Matrix Overview:**
     - Fibrosis: 64 correct, 6 misclassified
     - Tumor: 46 correct, 1 misclassified
 - The model demonstrates high sensitivity for tumor detection, aligning with clinical priorities.
-
-### Example Outputs
-
-#### Test Image Predictions
-
-| Tumor (90.84%) – SUV 4.07 | Tumor (90.70%) – SUV 7.55 | Fibrosis (92.60%) – SUV 0.25 |
-|---------------------------|---------------------------|------------------------------|
-| ![Example Tumor1](examples/pred_tumor1.png) | ![Example Tumor2](examples/pred_tumor2.png) | ![Example Fibrosis](examples/pred_fibrosis.png) |
-
-#### Performance Figures
-
-**ROC Curve**  
-![ROC Curve](examples/roc_curve.png)
-> _Figure: ROC curve for Tumor–Fibrosis classification (AUC = 0.9954)._
-
-**Confusion Matrix**  
-![Confusion Matrix](examples/confusion_matrix.png)
-> _Figure: Classification report and confusion matrix illustrating the model’s performance._
 
 ---
 
@@ -125,8 +107,8 @@ The project implements a hybrid neural network that combines convolutional and t
     ```bash
     python evaluate.py
     ```
-5. **Visualize Results**
-    - See `examples/` for sample outputs and evaluation scripts.
+5. **View Output**
+    - Evaluation metrics and logs will appear in the console or output files, as implemented.
 
 ---
 
@@ -136,10 +118,7 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 
 ---
 
-## Acknowledgements
 
-- Supervisor: _[Supervisor’s Name]_
-- Institution: _[Your University/College Name]_
 - Thanks to all contributors and open-source resources.
 
 ---
